@@ -23,7 +23,8 @@ button {
 
 button#new-deck {
   align-self: flex-start;
-  padding: 5px;
+  padding: 17px;
+  margin-right: 10px;
 }
 
 button.draw {
