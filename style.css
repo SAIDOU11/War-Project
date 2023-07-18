@@ -1,7 +1,13 @@
+*,
 html,
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
   background-image: url(images/table.png);
   font-family: "Exo 2", sans-serif;
   height: 100vh;
@@ -10,9 +16,21 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   color: white;
+}
+
+div.top {
+  margin: 0;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+}
+
+div.top > p {
+  margin: 0;
+  margin-left: 0.625em;
 }
 
 /* buttons */
@@ -25,14 +43,18 @@ button {
 }
 
 button#new-deck {
-  /* align-self: flex-start; */
+  align-self: flex-start;
   padding: 0.5em;
-  /* margin: 0 0.5em 0 0; */
+  margin: 0 0.5em 0 0;
 }
 
 button.draw {
   padding: 0.5em;
   align-self: stretch;
+}
+
+button:disabled {
+  cursor: not-allowed;
 }
 
 /* cards */
@@ -46,7 +68,7 @@ div.card-slot {
 }
 
 div.card-slot:nth-of-type(1) {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 img.card {
