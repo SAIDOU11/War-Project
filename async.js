@@ -4,8 +4,6 @@ const newDectBtn = document.getElementById("new-deck");
 const drawCardsBtn = document.getElementById("draw-cards");
 const header = document.getElementById("header");
 const remainingText = document.getElementById("remaining");
-// let cardComputer;
-// let myCard;
 const computerScoreEl = document.getElementById("computer-score");
 const myScoreEl = document.getElementById("my-score");
 let computerScore = 0;
